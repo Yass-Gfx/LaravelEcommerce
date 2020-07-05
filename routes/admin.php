@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('front.home');
+Route::get('/admin', function () {
+    return view('admin.dashboard');
 });
 
 // Route::group(['prefix' => LaravelLocalization::setLocale(),
@@ -17,6 +17,3 @@ Route::get('/', function () {
 //         return 'Test Route';
 //     });
 // });
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
