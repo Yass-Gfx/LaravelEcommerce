@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('front.home');
 });
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
 
 // Route::group(['prefix' => LaravelLocalization::setLocale(),
 //     'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']], function () {
