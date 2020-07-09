@@ -9,6 +9,7 @@ class Admin extends Model
 {
     use Notifiable;
 
+    protected $table = 'admins';
     protected $fillable = ['name', 'email', 'photo', 'password', 'created_at', 'updated_at'];
 
     protected $hidden = ['password', 'remeber_token'];
