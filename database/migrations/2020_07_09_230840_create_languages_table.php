@@ -18,7 +18,6 @@ class CreateLanguagesTable extends Migration
             $table->string('abbr');
             $table->string('locale')->nullable();
             $table->string('name');
-            $table->string('flag')->nullable();
             $table->enum('direction', ['ltr', 'rtl'])->default('rtl');
             $table->tinyInteger('active')->default(1);
             $table->timestamps();
